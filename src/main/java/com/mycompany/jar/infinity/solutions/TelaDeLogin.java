@@ -209,13 +209,6 @@ public class TelaDeLogin extends javax.swing.JFrame {
         String login = txtLoginUsuario.getText();
         String senha = txtSenhaUsuario.getText();
         
-        System.out.println("teste telaLogin");
-        ConexaoMysql conexaoLocal = new ConexaoMysql();
-        System.out.println("Teste conexao");
-        JdbcTemplate conLocal = conexaoLocal.getConexaoDoBanco();
-        System.out.println("Teste ult");
-            
-        conLocal.update("insert into credenciais(login) values (?)", login);
         
         VerificacaoCredenciais verCredencial = new VerificacaoCredenciais();
         
