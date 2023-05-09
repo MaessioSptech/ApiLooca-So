@@ -10,10 +10,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class ConexaoMysql {
     private JdbcTemplate conexaoDoBancoMysql;
-    
+    system.out.print("Teste 1");
      public ConexaoMysql() {
         BasicDataSource dataSource = new BasicDataSource();
+         system.out.print("Teste 2");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+         system.out.print("Teste 3");
         dataSource.setUrl("jdbc:mysql://localhost:3306/credencialBd");
         dataSource.setUsername("root");
         dataSource.setPassword("urubu100");
