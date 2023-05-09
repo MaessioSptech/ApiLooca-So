@@ -15,8 +15,8 @@ public class ConexaoMysql {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/credencialBd");
-        dataSource.setUsername("root");
-        dataSource.setPassword("manodoido");
+        dataSource.setUsername("ubuntu");
+        dataSource.setPassword("urubu100");
         
         this.conexaoDoBancoMysql = new JdbcTemplate(dataSource);
     }
